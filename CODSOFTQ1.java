@@ -12,9 +12,16 @@ public class CODSOFTQ1 {
             System.out.println("Try Again,Enter new number:");
             usernumber=obj.nextInt();
             x=x-1;
+            if((randomnumber-usernumber)>10){
+                System.out.println("too low!");
+            }
+            if((usernumber-randomnumber)>10){
+                System.out.println("too high!");
+            }
     }
     if(x==0){
         System.out.println("You didnt get correct Number");
+        System.out.println("Number was:"+randomnumber);
         System.out.println("Your Score(out of 10):"+0);
     }
     else{
