@@ -9,15 +9,16 @@ public class CODSOFTQ1 {
         int x=9;
         int usernumber=obj.nextInt();
         while(randomnumber!=usernumber && x!=0){
-            System.out.println("Try Again,Enter new number:");
-            usernumber=obj.nextInt();
-            x=x-1;
             if((randomnumber-usernumber)>10){
                 System.out.println("too low!");
             }
             if((usernumber-randomnumber)>10){
                 System.out.println("too high!");
             }
+            System.out.println("Try Again,Enter new number:");
+            usernumber=obj.nextInt();
+            x=x-1;
+            
     }
     if(x==0){
         System.out.println("You didnt get correct Number");
